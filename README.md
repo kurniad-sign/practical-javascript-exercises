@@ -12,7 +12,7 @@ var arrayBaru = [];
 ```
 
 ### Mengakses nilai Spesifik pada Array
-Untuk mengakses elemen spesifik pada array menggunaan nomor pada kurung persegi, dimulai dengan angka 0 karena perhitungan komputer dimulai dengan angka 0
+Untuk mengakses elemen spesifik pada array menggunakan nomor pada kurung persegi, dimulai dengan angka 0 karena perhitungan komputer dimulai dengan angka 0
 
 Contoh :
 ```
@@ -55,3 +55,34 @@ Beberapa Metode yang biasa digunakan pada tipe data array adalah
 
   // hasil: ['item 1', 'item 3'];
   ```  
+
+## Module 2 Functions
+Function adalah 'building blok' utama pada program, digunakan untuk mengeksekusi sekumpulan kode tanpa menuliskan kode berulang kali.
+
+### Mendeklarasikan Function
+Untuk membuat function pada Javascript kita menggunakan *Function Declaration*
+```
+function myFunction() {
+  console.log('Hi'); // konteks lokal fungsi atau body fungsi
+}
+```
+Untuk memanggil fungsi pada javascript kita tinggal memanggil nama dari fungsi tersebut diikuti dengan kurung buka dan tutup
+```
+function myFunction() {
+  console.log('Hi Agung');
+}
+
+myFunction() // hasil: 'Hi Agung'
+```
+
+### Function Parameter
+Beberapa fungsi memerlukan parameter, beberapa orang menyebutnya *local variable* dalam konteks fungsi, fungsi parameter digunakan secara spesifik, contoh untuk menuliskan kode pada fungsi diatas kita perlu nama yang berbeda, parameter dapat diisi dengan tipe data apapun, baik string, number maupun boolean.
+```
+function myFunction(nama) {
+  console.log('Hi' + nama);
+}
+
+muFunction('Fanji');
+// hasil : 'Hi Fanji'
+```
+
